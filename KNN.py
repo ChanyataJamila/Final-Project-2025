@@ -7,8 +7,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # โหลดข้อมูล
-df = pd.read_csv('output1.csv')
-X = df.drop(columns=['ID','Dead'])
+df = pd.read_csv('output3.csv')
+X = df.drop(columns=['Dead'])
 y = df['Dead']
 X = pd.get_dummies(X)
 
